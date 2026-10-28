@@ -379,12 +379,12 @@ p {
 }
 
 
-/* PROFILE PHOTO */
+/* PROFILE PHOTO - 100 x 100 PIXELS */
 
 .sidebar-wrapper .avatar {
-  width: 115px;
-  height: 115px;
-  max-width: 115px;
+  width: 100px;
+  height: 100px;
+  max-width: 100px;
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
@@ -393,7 +393,7 @@ p {
 }
 
 
-/* NAME - SINGLE LINE */
+/* NAME - SINGLE LINE ON DESKTOP */
 
 .sidebar-wrapper .name {
   font-size: 20px;
@@ -430,7 +430,7 @@ p {
 
 
 /* ==========================================
-   ACADEMIC AND PROFESSIONAL LINKS
+   PROFESSIONAL AND ACADEMIC LINKS
    ========================================== */
 
 .sidebar-wrapper .contact-list {
@@ -482,20 +482,22 @@ p {
    EDUCATION SECTION
    ========================================== */
 
-/* EDUCATION HEADING */
+
+/* EDUCATION HEADING - 18px BOLD */
 
 .sidebar-wrapper .education-container .container-block-title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
+  line-height: 1.3;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
 
-/* PHD AND BA - LARGE AND BOLD */
+/* PhD AND BA - 18px BOLD */
 
 .sidebar-wrapper .education-container .degree {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: 0;
@@ -504,9 +506,9 @@ p {
 }
 
 
-/* UNIVERSITY - SEMIBOLD */
+/* CORNELL AND BRYN MAWR - SAME FONT SIZE */
 
-.sidebar-wrapper .education-university {
+.sidebar-wrapper .education-container .education-university {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.5;
@@ -517,7 +519,7 @@ p {
 
 /* FIELD OF STUDY - REGULAR */
 
-.sidebar-wrapper .education-field {
+.sidebar-wrapper .education-container .education-field {
   font-size: 13px;
   font-weight: 400;
   font-style: normal;
@@ -529,7 +531,7 @@ p {
 
 /* MINOR - REGULAR, NOT BOLD OR ITALIC */
 
-.sidebar-wrapper .education-minor {
+.sidebar-wrapper .education-container .education-minor {
   font-size: 13px;
   font-weight: 400;
   font-style: normal;
@@ -539,7 +541,7 @@ p {
 }
 
 
-/* SPACE BETWEEN EDUCATION ENTRIES */
+/* SPACING BETWEEN EDUCATION ENTRIES */
 
 .sidebar-wrapper .education-container .item {
   margin-bottom: 26px;
@@ -552,18 +554,18 @@ p {
 
 @media (max-width: 767px) {
 
-  /* Allow name to wrap on small screens */
+  /* Allow name to wrap on narrow screens */
 
   .sidebar-wrapper .name {
     font-size: 20px;
     white-space: normal;
   }
 
-  /* Keep degree headings readable */
+  /* Maintain consistent education headings */
 
+  .sidebar-wrapper .education-container .container-block-title,
   .sidebar-wrapper .education-container .degree {
-    font-size: 20px;
-    white-space: normal;
+    font-size: 18px;
   }
 
   /* Adjust sidebar padding */
