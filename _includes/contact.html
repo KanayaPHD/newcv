@@ -1,64 +1,44 @@
 {% assign sidebar = site.data.data.sidebar %}
 
-{% if sidebar.linkedin or sidebar.orcid or sidebar.google_scholar %}
-
 <div class="contact-container container-block">
-
   <ul class="list-unstyled contact-list">
 
     <!-- LINKEDIN -->
-    {% if sidebar.linkedin != empty %}
+    {% if sidebar.linkedin %}
     <li class="academic-link">
-      <a href="{{ sidebar.linkedin }}"
-         target="_blank"
-         rel="noopener noreferrer">
-
+      <a href="{{ sidebar.linkedin }}" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-linkedin"
-           style="color: #0A66C2;"></i>
-
-        LinkedIn
+           style="color: #ffffff !important; font-size: 17px;"></i>
+        <span>LinkedIn</span>
       </a>
     </li>
     {% endif %}
 
     <!-- ORCID -->
-    {% if sidebar.orcid != empty %}
+    {% if sidebar.orcid %}
     <li class="academic-link">
-      <a href="{{ sidebar.orcid }}"
-         target="_blank"
-         rel="noopener noreferrer">
-
+      <a href="{{ sidebar.orcid }}" target="_blank" rel="noopener noreferrer">
         <img
           src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
-          alt=""
-          class="academic-icon"
-        >
-
-        ORCID
+          alt="ORCID"
+          class="academic-icon">
+        <span>ORCID</span>
       </a>
     </li>
     {% endif %}
 
     <!-- GOOGLE SCHOLAR -->
-    {% if sidebar.google_scholar != empty %}
+    {% if sidebar.google_scholar %}
     <li class="academic-link">
-      <a href="{{ sidebar.google_scholar }}"
-         target="_blank"
-         rel="noopener noreferrer">
-
+      <a href="{{ sidebar.google_scholar }}" target="_blank" rel="noopener noreferrer">
         <img
           src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlescholar.svg"
-          alt=""
-          class="academic-icon scholar-icon"
-        >
-
-        Google Scholar
+          alt="Google Scholar"
+          class="academic-icon scholar-icon">
+        <span>Google Scholar</span>
       </a>
     </li>
     {% endif %}
 
   </ul>
-
 </div>
-
-{% endif %}
