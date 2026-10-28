@@ -363,11 +363,23 @@ p {
     margin-right: 5px;
   }
 }
-/* ========================================
+/* ==========================================
    TOMOE KANAYA - CUSTOM SIDEBAR STYLING
-   ======================================== */
+   Ceramic Theme
+   ========================================== */
 
-/* Profile photo */
+
+/* ==========================================
+   PROFILE HEADER
+   ========================================== */
+
+.sidebar-wrapper .profile-container {
+  padding: 28px 12px 24px;
+  text-align: center;
+}
+
+
+/* PROFILE PHOTO */
 
 .sidebar-wrapper .avatar {
   width: 115px;
@@ -380,7 +392,8 @@ p {
   margin: 0 auto 20px;
 }
 
-/* Name: one line */
+
+/* NAME - SINGLE LINE */
 
 .sidebar-wrapper .name {
   font-size: 20px;
@@ -388,23 +401,37 @@ p {
   line-height: 1.3;
   letter-spacing: -0.5px;
   white-space: nowrap;
-  margin-bottom: 12px;
+  margin: 0 0 12px;
 }
 
-/* Professional titles: two lines */
+
+/* PROFESSIONAL TITLES - TWO LINES */
 
 .sidebar-wrapper .tagline {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.92);
+  margin: 0;
 }
 
 .sidebar-wrapper .tagline div {
   display: block;
 }
 
-/* Academic links */
+
+/* ==========================================
+   SIDEBAR SPACING
+   ========================================== */
+
+.sidebar-wrapper .container-block {
+  padding: 20px 16px;
+}
+
+
+/* ==========================================
+   ACADEMIC AND PROFESSIONAL LINKS
+   ========================================== */
 
 .sidebar-wrapper .contact-list {
   list-style: none;
@@ -429,13 +456,15 @@ p {
   text-decoration: underline;
 }
 
-/* LinkedIn icon */
+
+/* LINKEDIN ICON */
 
 .sidebar-wrapper .academic-link .fa-linkedin {
   font-size: 17px;
 }
 
-/* ORCID and Google Scholar icons */
+
+/* ORCID AND GOOGLE SCHOLAR ICONS */
 
 .sidebar-wrapper .academic-icon {
   width: 17px;
@@ -448,72 +477,99 @@ p {
   filter: brightness(0) invert(1);
 }
 
-/* Sidebar section spacing */
 
-.sidebar-wrapper .container-block {
-  padding: 20px 16px;
-}
+/* ==========================================
+   EDUCATION SECTION
+   ========================================== */
 
-/* Education heading */
+/* EDUCATION HEADING */
 
-.sidebar-wrapper .education-container
-.container-block-title {
+.sidebar-wrapper .education-container .container-block-title {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
-/* Degree: one line */
+
+/* PHD AND BA - LARGE AND BOLD */
 
 .sidebar-wrapper .education-container .degree {
-  font-size: 11px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 1.4;
-  letter-spacing: -0.25px;
-  white-space: nowrap;
-  margin-bottom: 5px;
+  line-height: 1.3;
+  letter-spacing: 0;
+  white-space: normal;
+  margin: 0 0 5px;
 }
 
-/* Behavioral Statistics minor */
 
-.sidebar-wrapper .education-minor {
-  font-size: 12px;
-  font-style: italic;
-  font-weight: 400;
+/* UNIVERSITY - SEMIBOLD */
+
+.sidebar-wrapper .education-university {
+  font-size: 14px;
+  font-weight: 600;
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 5px;
+  color: #ffffff;
+  margin-bottom: 2px;
 }
 
-/* University */
 
-.sidebar-wrapper .education-container .meta {
+/* FIELD OF STUDY - REGULAR */
+
+.sidebar-wrapper .education-field {
   font-size: 13px;
   font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 3px;
+}
+
+
+/* MINOR - REGULAR, NOT BOLD OR ITALIC */
+
+.sidebar-wrapper .education-minor {
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.85);
   margin-bottom: 0;
 }
 
-/* Space between education entries */
+
+/* SPACE BETWEEN EDUCATION ENTRIES */
 
 .sidebar-wrapper .education-container .item {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
 }
 
-/* Mobile adjustments */
+
+/* ==========================================
+   MOBILE RESPONSIVENESS
+   ========================================== */
 
 @media (max-width: 767px) {
 
+  /* Allow name to wrap on small screens */
+
   .sidebar-wrapper .name {
-    white-space: normal;
     font-size: 20px;
+    white-space: normal;
   }
 
+  /* Keep degree headings readable */
+
   .sidebar-wrapper .education-container .degree {
+    font-size: 20px;
     white-space: normal;
-    font-size: 13px;
+  }
+
+  /* Adjust sidebar padding */
+
+  .sidebar-wrapper .container-block {
+    padding: 20px 18px;
   }
 
 }

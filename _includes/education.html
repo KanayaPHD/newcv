@@ -8,23 +8,29 @@
     {{ education.title }}
   </h2>
 
-  {% for graduation in education.info %}
+  {% for item in education.info %}
 
   <div class="item">
 
-    <h4 class="degree">
-      {{ graduation.degree }}
-    </h4>
+    <h3 class="degree">
+      {{ item.degree }}
+    </h3>
 
-    {% if graduation.minor %}
-    <div class="education-minor">
-      {{ graduation.minor }}
+    <div class="education-university">
+      {{ item.university }}
+    </div>
+
+    {% if item.field %}
+    <div class="education-field">
+      {{ item.field }}
     </div>
     {% endif %}
 
-    <h5 class="meta">
-      {{ graduation.university }}
-    </h5>
+    {% if item.minor %}
+    <div class="education-minor">
+      {{ item.minor }}
+    </div>
+    {% endif %}
 
   </div>
 

@@ -13,9 +13,9 @@ sidebar:
   tagline: "Behavioral Researcher|Data Scientist"
   avatar: "myphoto.jpg"
 
-  linkedin: ""
-  orcid: ""
-  google_scholar: ""
+  linkedin: "https://www.linkedin.com/in/tomoe-kanaya-ph-d-29089115a/"
+  orcid: "https://orcid.org/0000-0002-5105-2893"
+  google_scholar: "https://scholar.google.com/citations?user=9osbCasAAAAJ&hl=en&oi=ao"
   pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
 
   languages:
@@ -57,12 +57,14 @@ career-profile:
 education:
   title: Education
   info:
-    - degree: "PhD in Developmental Psychology"
-      minor: "Minor in Behavioral Statistics"
+    - degree: "PhD"
       university: "Cornell University"
+      field: "Developmental Psychology"
+      minor: "Minor in Behavioral Statistics"
 
-    - degree: "BA in Psychology & English"
+    - degree: "BA"
       university: "Bryn Mawr College"
+      field: "Psychology & English"
 experiences:
   title: Experiences
   info:
