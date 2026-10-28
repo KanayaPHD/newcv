@@ -574,4 +574,32 @@ p {
     padding: 20px 18px;
   }
 
+}/* ==========================================
+   CERAMIC THEME - UNIFORM SIDEBAR COLOR
+   ========================================== */
+
+/* Entire sidebar */
+
+.sidebar-wrapper {
+  background: #4B6A78;
+  background-color: #4B6A78;
+}
+
+/* Profile photo, name and professional titles */
+
+.sidebar-wrapper .profile-container {
+  background: #4B6A78;
+  background-color: #4B6A78;
+}
+
+/* Contact links */
+
+.sidebar-wrapper .contact-container {
+  background: transparent;
+}
+
+/* Education */
+
+.sidebar-wrapper .education-container {
+  background: transparent;
 }
