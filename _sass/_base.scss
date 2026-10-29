@@ -679,3 +679,16 @@ p {
     padding: 20px 18px 26px;
   }
 }
+
+/* Ceramic blue for profile, links, and Education */
+.sidebar-wrapper,
+.sidebar-wrapper .profile-container,
+.sidebar-wrapper .contact-container,
+.sidebar-wrapper .education-container {
+  background-color: #4B6A78;
+}
+
+/* Slightly darker blue from Experience onward */
+.sidebar-wrapper .professional-experience-container {
+  background-color: #3F5C69;
+}
