@@ -65,6 +65,40 @@ education:
     - degree: "BA"
       university: "Bryn Mawr College"
       field: "Psychology & English"
+      # Professional Experience
+professional_experience:
+  title: "Professional Experience"
+
+  current:
+    - title: "Associate Professor"
+      specialty: "Psychological Science"
+      organization: "Claremont McKenna College"
+
+    - title: "Independent Consultant"
+      specialty: "Behavioral & UX Research"
+      detail: "Policy Evaluation · Data Science"
+
+  previous:
+    - title: "AI Decision & Data Scientist"
+      specialty: "Senior Manager"
+      organization: "Accenture Song"
+
+    - title: "Director"
+      specialty: "Berger Institute for Work, Family and Children"
+      organization: "Claremont McKenna College"
+
+    - title: "Assistant Professor"
+      specialty: "Psychological Science"
+      organization: "Claremont McKenna College"
+
+    - title: "Assistant Professor"
+      specialty: "Psychology"
+      organization: "Muhlenberg College"
+
+    - title: "Research Associate"
+      specialty: "Center for Children and Technology"
+      organization: "Education Development Center, Inc."
+      
 experiences:
   title: Experiences
   info:

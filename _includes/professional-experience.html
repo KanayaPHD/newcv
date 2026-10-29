@@ -1,0 +1,83 @@
+{% assign experience = site.data.data.professional_experience %}
+
+{% if experience %}
+<div class="professional-experience-container container-block">
+
+  <h2 class="container-block-title">
+    {{ experience.title }}
+  </h2>
+
+  {% if experience.current %}
+  <div class="experience-group">
+
+    <h3 class="experience-group-title">Current</h3>
+
+    {% for item in experience.current %}
+    <div class="experience-item">
+
+      <div class="experience-title">
+        {{ item.title }}
+      </div>
+
+      {% if item.specialty %}
+      <div class="experience-specialty">
+        {{ item.specialty }}
+      </div>
+      {% endif %}
+
+      {% if item.detail %}
+      <div class="experience-detail">
+        {{ item.detail }}
+      </div>
+      {% endif %}
+
+      {% if item.organization %}
+      <div class="experience-organization">
+        {{ item.organization }}
+      </div>
+      {% endif %}
+
+    </div>
+    {% endfor %}
+
+  </div>
+  {% endif %}
+
+  {% if experience.previous %}
+  <div class="experience-group experience-previous">
+
+    <h3 class="experience-group-title">Previous</h3>
+
+    {% for item in experience.previous %}
+    <div class="experience-item">
+
+      <div class="experience-title">
+        {{ item.title }}
+      </div>
+
+      {% if item.specialty %}
+      <div class="experience-specialty">
+        {{ item.specialty }}
+      </div>
+      {% endif %}
+
+      {% if item.detail %}
+      <div class="experience-detail">
+        {{ item.detail }}
+      </div>
+      {% endif %}
+
+      {% if item.organization %}
+      <div class="experience-organization">
+        {{ item.organization }}
+      </div>
+      {% endif %}
+
+    </div>
+    {% endfor %}
+
+  </div>
+  {% endif %}
+
+</div>
+{% endif %}
