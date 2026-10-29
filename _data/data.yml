@@ -76,7 +76,8 @@ professional_experience:
 
     - title: "Independent Consultant"
       specialty: "Behavioral & UX Research"
-      detail: "Policy Evaluation · Data Science"
+      detail: "Policy Evaluation"
+      organization: "Data Science"
 
   previous:
     - title: "AI Decision & Data Scientist"
