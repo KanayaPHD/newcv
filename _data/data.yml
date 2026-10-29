@@ -67,7 +67,7 @@ education:
       field: "Psychology & English"
       # Professional Experience
 professional_experience:
-  title: "Professional Experience"
+  title: "Experience"
 
   current:
     - title: "Associate Professor"

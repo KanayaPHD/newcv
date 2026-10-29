@@ -691,3 +691,56 @@ p {
     padding: 20px 18px 26px;
   }
 }
+
+/* ==========================================
+   REFINED EXPERIENCE SIDEBAR DESIGN
+   ========================================== */
+
+/* Compact section heading */
+.sidebar-wrapper
+.professional-experience-container
+.container-block-title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+/* Subtle CURRENT / PREVIOUS labels */
+.sidebar-wrapper .experience-group-title {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 14px;
+}
+
+/* Less heavy job titles */
+.sidebar-wrapper .experience-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.45;
+  margin-bottom: 2px;
+}
+
+/* Tighter supporting text */
+.sidebar-wrapper .experience-specialty,
+.sidebar-wrapper .experience-detail,
+.sidebar-wrapper .experience-organization {
+  font-size: 13px;
+  line-height: 1.45;
+  margin-bottom: 1px;
+}
+
+/* Clear separation between jobs */
+.sidebar-wrapper .experience-item {
+  margin-bottom: 20px;
+}
+
+/* Subtle divider between groups */
+.sidebar-wrapper .experience-previous {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
