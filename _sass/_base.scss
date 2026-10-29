@@ -1,26 +1,4 @@
 
-Loading older messages…
-i don't like the vertical lines
-I agree. I think the vertical lines make the sidebar look a little too structured, almost like a timeline. Your ceramic theme would look better with simple indentation, no lines, and carefully balanced bolding.
-
-I'd keep everything else from the latest design.
-
-What I'd change
-PhD and Cornell University: Same line, both semibold.
-
-Education details: Indented 12px, without a vertical line.
-
-Job titles: All 14px semibold, including previous positions.
-
-Job details: Indented 12px, regular weight.
-
-CURRENT / PREVIOUS: Keep them 14px semibold.
-
-Horizontal divider: Keep the subtle divider between CURRENT and PREVIOUS.
-
-Exactly what to do
-Open _sass/_base.scss, scroll to the very bottom, and paste this:
-
 /* ==========================================
    SIDEBAR - CLEAN INDENTATION, NO VERTICAL LINES
    ========================================== */
