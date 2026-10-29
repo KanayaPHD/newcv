@@ -1,281 +1,5 @@
-
-/* ==========================================
-   SIDEBAR - CLEAN INDENTATION, NO VERTICAL LINES
-   ========================================== */
-
-/* Education details */
-.sidebar-wrapper .education-container .education-details {
-  border-left: none;
-  margin-left: 0;
-  padding-left: 12px;
-}
-
-/* Experience details */
-.sidebar-wrapper .professional-experience-container .experience-details {
-  border-left: none;
-  margin-left: 0;
-  padding-left: 12px;
-}
-
-/* Maintain compact spacing within each entry */
-.sidebar-wrapper .education-container .education-heading {
-  margin-bottom: 5px;
-}
-
-.sidebar-wrapper .professional-experience-container
-.experience-item .experience-title {
-  margin-bottom: 5px;
-}
-
-/* Comfortable spacing between entries */
-.sidebar-wrapper .education-container .item {
-  margin-bottom: 24px;
-}
-
-.sidebar-wrapper .professional-experience-container .experience-item {
-  margin-bottom: 25px;
-}
-
-/* No extra space after the last entry */
-.sidebar-wrapper .education-container .item:last-child,
-.sidebar-wrapper .professional-experience-container
-.experience-item:last-child {
-  margin-bottom: 0;
-}
-
-You don't need to change any HTML or YAML files.
-
-This removes the vertical lines while preserving the indentation and typography you've already set up.
-
-My recommendation: Try this version before making any more changes. I think the combination of semibold titles, slightly indented details, and generous spacing will give you the clean, sophisticated sidebar you're looking for.
-
-
-Convert to PDF
-do i just have the most ridiculous _base.scss code now?
-Haha, yes, probably a little! 😄 And I take responsibility for that.
-
-We've been refining your sidebar through trial and error, and I've repeatedly told you to paste new CSS at the bottom of _sass/_base.scss.
-
-That works, but it's not a good long-term solution.
-
-What's probably happening
-Your file may now contain several versions of the same CSS rules:
-
-/* Original styling */
-.sidebar-wrapper .experience-title {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-/* Later adjustment */
-.sidebar-wrapper .experience-title {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-/* Another adjustment */
-.sidebar-wrapper .experience-title {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-/* Final adjustment */
-.sidebar-wrapper .experience-title {
-  font-size: 14px !important;
-  font-weight: 600 !important;
-}
-
-The browser generally uses the last applicable rule, accounting for specificity and !important. So your website can look fine even though the stylesheet has become unnecessarily complicated.
-
-What I recommend now
-Let's clean up _base.scss properly before making any more design changes.
-
-I'd like to consolidate everything into one organized set of rules for:
-
-Your ceramic-blue sidebar and profile.
-
-Your photo, name, and tagline.
-
-LinkedIn, ORCID, and Google Scholar.
-
-Education — degree and university on one line, with indented details.
-
-Experience — consistent titles, indented details, CURRENT/PREVIOUS headings, and no vertical lines.
-
-Mobile responsiveness.
-
-We'll preserve the original Jekyll theme styling and remove only the redundant custom overrides.
-
-What I need from you
-Open _sass/_base.scss in github.dev, copy the entire file, and paste it here.
-
-You can also upload the file directly.
-
-I'll then give you one complete, cleaned-up _base.scss file that you can copy and paste to replace the existing one.
-
-That way, we won't accidentally delete anything important from the original theme, and you'll have a stylesheet that's much easier to maintain.
-
-No more stacking CSS fixes on top of CSS fixes.
-
-
-Convert to PDF
-
-Pasted text(6).txt
-Document
-I reviewed your entire _base.scss file, and yes — we've accumulated quite a few overlapping CSS rules! The good news is that the original Jekyll theme is intact, so we can clean this up without rebuilding your website.
-
-Your file currently has about 1,000 lines. The first 365 lines contain the original theme styling, including the main CV, print button, and PDF button. Most of the duplication is in the custom sidebar styling that follows. 
-Pasted text(6).txt
-
-For example, we have multiple rules changing the size of PhD and BA, several competing font weights for job titles, and even rules that add vertical lines followed by later rules that remove them. 
-Pasted text(6).txt
-
-My recommendation is to preserve the original theme and replace the accumulated custom styling with one clean, organized section.
-
-I'll keep your final design choices: ceramic-blue background, 100px circular photo, education degree and university on one line, 12px indentation without vertical lines, consistent 14px semibold job titles, and the horizontal divider between CURRENT and PREVIOUS.
-
-Your cleaned-up stylesheet is ready.
-
-Cleaned _base.scss
-
-543 lines instead of approximately 1,004 — about 46% shorter
-
-Download the cleaned stylesheet
-
-Exactly what to do
-Download the file above.
-
-Open your GitHub repository in github.dev.
-
-Open _sass/_base.scss.
-
-Select everything in that file (Ctrl+A or Cmd+A).
-
-Delete it and paste the entire contents of the downloaded base_cleaned.scss file.
-
-Save, commit, and push the change to master.
-
-Wait for GitHub Pages to deploy, then refresh your website.
-
-Only replace _sass/_base.scss. Leave your HTML, YAML, and other files unchanged.
-
-I preserved the original main CV styling and print/PDF buttons, while consolidating the sidebar rules. The cleaned CSS assumes you're using the updated education.html and professional-experience.html files with their respective details wrappers, as we set up earlier.
-
-The intended appearance is the latest version you chose: no vertical lines, subtle indentation, semibold degree/university names, consistent job-title typography, and a horizontal divider between CURRENT and PREVIOUS.
-
-This hasn't been tested against your live site yet, so after publishing, check the sidebar on both desktop and mobile.
-
-
-base_cleaned.scss
-Code
-
-Convert to PDF
-the whole sidebar is now missing
-I'm sorry — the cleaned stylesheet I gave you appears to have caused a problem. Let's restore your sidebar first. We don't need to change any other files.
-
-Step 1 — Restore the previous _base.scss
-In github.dev:
-
-Open _sass/_base.scss.
-
-Click the Source Control icon on the left.
-
-If you haven't committed the cleaned stylesheet yet, right-click _base.scss under Changes and choose Discard Changes. This restores the last committed version.
-
-If you've already committed and pushed it, open your repository on GitHub, navigate to _sass/_base.scss, click History, and open the version from before the cleanup.
-
-Copy that previous version's contents into your current _sass/_base.scss, then save, commit, and push.
-
-Don't discard changes if you have other uncommitted edits in _base.scss that you want to keep. In that case, use the file history instead.
-
-Step 2 — Wait for deployment
-Open your CV website after GitHub Pages finishes deploying, then hard-refresh the page (Ctrl+Shift+R or Cmd+Shift+R).
-
-Step 3 — Check what happened
-If the sidebar returns, we've confirmed the problem was introduced by the replacement stylesheet.
-
-If it's still missing, check GitHub → Actions for a failed Pages deployment. A stylesheet compilation error can prevent the site from updating correctly.
-
-I don't want to give you another untested replacement that risks breaking the site.
-
-One question: Is the entire blue sidebar gone, including your photo and name, or is the blue sidebar still there but all its text and content are missing?
-
-That distinction will help me identify whether we're dealing with a CSS layout problem or something else.
-
-
-Convert to PDF
-entire sidebar gone.... but when I click on history, etc I only have the stuff I just added
-That's okay — we still have a copy of your original _base.scss from before the cleanup. You uploaded it earlier in this conversation, so we don't need GitHub's history to recover it.
-
-Since the entire blue sidebar disappeared, I want to restore the original stylesheet first rather than keep experimenting with CSS.
-
-I'll use the file you uploaded earlier, which already contained your latest design choices, including the removal of the vertical lines.
-
-Your original _base.scss — recovered
-
-Exact copy of your uploaded 1,004-line stylesheet
-
-Download the recovered stylesheet
-
-Do this now
-Download base_restored.scss above.
-
-In github.dev, open _sass/_base.scss.
-
-Select all (Ctrl+A or Cmd+A) and replace the contents with the recovered file's contents.
-
-Save.
-
-Open Source Control, enter Restore working sidebar stylesheet, then commit and push.
-
-Wait for GitHub Pages to finish deploying, then refresh your website.
-
-This is the exact version you gave me before I attempted the cleanup, so it should restore the styling you had when the sidebar was visible.
-
-Please don't use base_cleaned.scss again. Once the sidebar is back, we can investigate the cleanup problem without risking the working version.
-
-
-base_restored.scss
-Code
-
-Convert to PDF
-it won't download
-I'm sorry about the trouble. I checked, and your original stylesheet is still available. Nothing has been lost.
-
-Try this link instead:
-
-Download your original _base.scss
-
-It's the exact text file you uploaded before we attempted the cleanup. The .txt extension is fine; you'll copy its contents into _base.scss.
-
-If the download still doesn't work
-We have another way to recover it without downloading anything:
-
-Open your GitHub repository at github.com/KanayaPHD/newcv.
-
-Open _sass/_base.scss.
-
-Click History.
-
-Look for the commit immediately before Refine education and experience sidebar styling or the stylesheet cleanup commit.
-
-Open that version, click Raw, and copy the entire contents.
-
-Return to the current _sass/_base.scss in github.dev, replace everything, save, commit, and push.
-
-If you still can't access an earlier version, tell me whether you're using a Mac, Windows computer, or phone, and I'll walk you through restoring the original code directly without relying on a download link.
-
-For now, don't make any other changes to your website. Let's get the sidebar visible again first.
-
-
-Pasted text(6).txt
-Document
-
-Convert to PDF
-
-
-
 /* ======= Base ======= */
+
 body {
   font-family: "Roboto", sans-serif;
   color: $text-color-secondary;
@@ -297,10 +21,12 @@ h6 {
 
 a {
   color: darken($theme-color, 15%);
+
   &:hover {
     text-decoration: underline;
     color: darken($theme-color, 30%);
   }
+
   &:focus {
     text-decoration: none;
   }
@@ -325,41 +51,45 @@ p {
   order: $sidebar-order;
   background: $theme-color;
   color: #fff;
+
   a {
     color: #fff;
   }
+
   .profile-container {
     padding: 30px;
-    //background: darken($theme-color, 10%);
     background: rgba(0, 0, 0, 0.2);
     text-align: center;
     color: #fff;
   }
+
   .name {
     font-size: 32px;
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 10px;
   }
+
   .tagline {
-    color: rgba(256, 256, 256, 0.6);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 0;
   }
+
   .profile {
     margin-bottom: 15px;
   }
 
   .avatar {
-    //used for profile image
     max-width: 100px;
     margin-bottom: 15px;
-    border: 0px solid #fff;
+    border: 0 solid #fff;
     border-radius: 100%;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   }
+
   .contact-list {
     .fas,
     .fab,
@@ -368,16 +98,20 @@ p {
       font-size: 18px;
       vertical-align: middle;
     }
+
     li {
       margin-bottom: 15px;
+
       &:last-child {
         margin-bottom: 0;
       }
     }
   }
+
   .container-block {
     padding: 30px;
   }
+
   .container-block-title {
     text-transform: uppercase;
     font-size: 16px;
@@ -385,40 +119,48 @@ p {
     margin-top: 0;
     margin-bottom: 15px;
   }
+
   .degree {
     font-size: 14px;
     margin-top: 0;
     margin-bottom: 5px;
   }
+
   .education-container {
     .item {
       margin-bottom: 15px;
+
       &:last-child {
         margin-bottom: 0;
       }
     }
+
     .meta {
-      color: rgba(256, 256, 256, 0.6);
+      color: rgba(255, 255, 255, 0.6);
       font-weight: 500;
-      margin-bottom: 0px;
+      margin-bottom: 0;
       margin-top: 0;
     }
+
     .time {
-      color: rgba(256, 256, 256, 0.6);
+      color: rgba(255, 255, 255, 0.6);
       font-weight: 500;
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
+
   .languages-container {
     .lang-desc {
-      color: rgba(256, 256, 256, 0.6);
+      color: rgba(255, 255, 255, 0.6);
     }
   }
 
   .languages-list {
     margin-bottom: 0;
+
     li {
       margin-bottom: 10px;
+
       &:last-child {
         margin-bottom: 0;
       }
@@ -427,8 +169,10 @@ p {
 
   .interests-list {
     margin-bottom: 0;
+
     li {
       margin-bottom: 10px;
+
       &:last-child {
         margin-bottom: 0;
       }
@@ -436,11 +180,14 @@ p {
   }
 }
 
+/* ======= Main CV ======= */
+
 .main-wrapper {
   grid-column: span 7;
   order: $resume-order;
   background: #fff;
   padding: 60px;
+
   .section-title {
     text-transform: uppercase;
     font-size: 20px;
@@ -450,6 +197,7 @@ p {
     margin-top: 0;
     margin-bottom: 20px;
   }
+
   .section {
     margin-bottom: 60px;
   }
@@ -461,6 +209,7 @@ p {
       margin-bottom: 30px;
     }
   }
+
   .upper-row,
   .second-upper-row {
     position: relative;
@@ -468,6 +217,7 @@ p {
     margin-bottom: 2px;
     display: flex;
   }
+
   .job-title,
   .degree,
   .cert-title,
@@ -488,6 +238,7 @@ p {
     color: $text-grey;
     flex: 25%;
   }
+
   .company,
   .recommendation-role,
   .university,
@@ -503,18 +254,22 @@ p {
     margin-bottom: 5px;
     color: darken($theme-color, 15%);
   }
+
   .projects-section {
     .intro {
       margin-bottom: 30px;
     }
+
     .item {
       margin-bottom: 15px;
     }
   }
+
   .oss-section {
     .intro {
       margin-bottom: 30px;
     }
+
     .item {
       margin-bottom: 15px;
     }
@@ -526,43 +281,54 @@ p {
     color: $text-color;
     margin-bottom: 1px;
   }
+
   .publication-authors {
     font-style: italic;
     color: $text-grey;
     margin-bottom: 1px;
   }
+
   .publications-section {
     .intro {
       margin-bottom: 30px;
     }
+
     .item {
       margin-bottom: 15px;
     }
   }
 }
 
+/* ======= Skills ======= */
+
 .skillset {
   .item {
     margin-bottom: 15px;
     overflow: hidden;
   }
+
   .level-title {
     font-size: 14px;
     margin-top: 0;
     margin-bottom: 12px;
   }
+
   .level-bar {
     height: 12px;
     background: $smoky-white;
   }
+
   .level-bar-inner {
     height: 12px;
     background: lighten($theme-color, 15%);
   }
 }
 
+/* ======= Footer ======= */
+
 .footer {
   padding-top: 30px;
+
   .copyright {
     line-height: 1.6;
     color: $text-color-secondary;
@@ -574,10 +340,12 @@ p {
   }
 }
 
+/* ======= Print Button ======= */
+
 .print-button {
   position: fixed;
   top: 20px;
-  right: 120px; // Changed from 20px to make space for the PDF button
+  right: 120px;
   z-index: 1000;
   background: $theme-color;
   color: #fff;
@@ -604,6 +372,8 @@ p {
     margin-right: 5px;
   }
 }
+
+/* ======= PDF Button ======= */
 
 .pdf-button {
   position: fixed;
@@ -640,23 +410,35 @@ p {
     margin-right: 5px;
   }
 }
+
 /* ==========================================
-   TOMOE KANAYA - CUSTOM SIDEBAR STYLING
+   CUSTOM SIDEBAR STYLING
    Ceramic Theme
    ========================================== */
 
+/* ----- SIDEBAR COLOR ----- */
 
-/* ==========================================
-   PROFILE HEADER
-   ========================================== */
+.sidebar-wrapper {
+  background: #4B6A78;
+  background-color: #4B6A78;
+}
+
+.sidebar-wrapper .profile-container {
+  background: #4B6A78;
+  background-color: #4B6A78;
+}
+
+.sidebar-wrapper .contact-container,
+.sidebar-wrapper .education-container {
+  background: transparent;
+}
+
+/* ----- PROFILE ----- */
 
 .sidebar-wrapper .profile-container {
   padding: 28px 12px 24px;
   text-align: center;
 }
-
-
-/* PROFILE PHOTO - 100 x 100 PIXELS */
 
 .sidebar-wrapper .avatar {
   width: 100px;
@@ -669,9 +451,6 @@ p {
   margin: 0 auto 20px;
 }
 
-
-/* NAME - SINGLE LINE ON DESKTOP */
-
 .sidebar-wrapper .name {
   font-size: 20px;
   font-weight: 700;
@@ -680,9 +459,6 @@ p {
   white-space: nowrap;
   margin: 0 0 12px;
 }
-
-
-/* PROFESSIONAL TITLES - TWO LINES */
 
 .sidebar-wrapper .tagline {
   font-size: 16px;
@@ -696,19 +472,13 @@ p {
   display: block;
 }
 
-
-/* ==========================================
-   SIDEBAR SPACING
-   ========================================== */
+/* ----- SIDEBAR SPACING ----- */
 
 .sidebar-wrapper .container-block {
   padding: 20px 16px;
 }
 
-
-/* ==========================================
-   PROFESSIONAL AND ACADEMIC LINKS
-   ========================================== */
+/* ----- CONTACT AND ACADEMIC LINKS ----- */
 
 .sidebar-wrapper .contact-list {
   list-style: none;
@@ -733,15 +503,9 @@ p {
   text-decoration: underline;
 }
 
-
-/* LINKEDIN ICON */
-
 .sidebar-wrapper .academic-link .fa-linkedin {
   font-size: 17px;
 }
-
-
-/* ORCID AND GOOGLE SCHOLAR ICONS */
 
 .sidebar-wrapper .academic-icon {
   width: 17px;
@@ -753,337 +517,6 @@ p {
 .sidebar-wrapper .scholar-icon {
   filter: brightness(0) invert(1);
 }
-
-
-/* ==========================================
-   EDUCATION SECTION
-   ========================================== */
-
-
-/* EDUCATION HEADING - 18px BOLD */
-
-.sidebar-wrapper .education-container .container-block-title {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.3;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-
-/* PhD AND BA - 18px BOLD */
-
-.sidebar-wrapper .education-container .degree {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.3;
-  letter-spacing: 0;
-  white-space: normal;
-  margin: 0 0 5px;
-}
-
-
-/* CORNELL AND BRYN MAWR - SAME FONT SIZE */
-
-.sidebar-wrapper .education-container .education-university {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
-  color: #ffffff;
-  margin-bottom: 2px;
-}
-
-
-/* FIELD OF STUDY - REGULAR */
-
-.sidebar-wrapper .education-container .education-field {
-  font-size: 13px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 3px;
-}
-
-
-/* MINOR - REGULAR, NOT BOLD OR ITALIC */
-
-.sidebar-wrapper .education-container .education-minor {
-  font-size: 13px;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 0;
-}
-
-
-/* SPACING BETWEEN EDUCATION ENTRIES */
-
-.sidebar-wrapper .education-container .item {
-  margin-bottom: 26px;
-}
-
-
-/* ==========================================
-   MOBILE RESPONSIVENESS
-   ========================================== */
-
-@media (max-width: 767px) {
-
-  /* Allow name to wrap on narrow screens */
-
-  .sidebar-wrapper .name {
-    font-size: 20px;
-    white-space: normal;
-  }
-
-  /* Maintain consistent education headings */
-
-  .sidebar-wrapper .education-container .container-block-title,
-  .sidebar-wrapper .education-container .degree {
-    font-size: 18px;
-  }
-
-  /* Adjust sidebar padding */
-
-  .sidebar-wrapper .container-block {
-    padding: 20px 18px;
-  }
-
-}/* ==========================================
-   CERAMIC THEME - UNIFORM SIDEBAR COLOR
-   ========================================== */
-
-/* Entire sidebar */
-
-.sidebar-wrapper {
-  background: #4B6A78;
-  background-color: #4B6A78;
-}
-
-/* Profile photo, name and professional titles */
-
-.sidebar-wrapper .profile-container {
-  background: #4B6A78;
-  background-color: #4B6A78;
-}
-
-/* Contact links */
-
-.sidebar-wrapper .contact-container {
-  background: transparent;
-}
-
-/* Education */
-
-.sidebar-wrapper .education-container {
-  background: transparent;
-}
-/* ==========================================
-   PROFESSIONAL EXPERIENCE - SIDEBAR
-   ========================================== */
-
-.sidebar-wrapper .professional-experience-container {
-  padding: 20px 16px 26px;
-}
-
-/* Main section heading */
-.sidebar-wrapper
-.professional-experience-container
-.container-block-title {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.3;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin: 0 0 22px;
-}
-
-/* Current / Previous headings */
-.sidebar-wrapper .experience-group-title {
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.4;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.82);
-  margin: 0 0 16px;
-}
-
-/* Space between positions */
-.sidebar-wrapper .experience-item {
-  margin-bottom: 22px;
-}
-
-.sidebar-wrapper .experience-item:last-child {
-  margin-bottom: 0;
-}
-
-/* Main job title */
-.sidebar-wrapper .experience-title {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.4;
-  color: #ffffff;
-  margin-bottom: 3px;
-}
-
-/* Specialization, department, or seniority */
-.sidebar-wrapper .experience-specialty {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #ffffff;
-  margin-bottom: 2px;
-}
-
-/* Additional specialty */
-.sidebar-wrapper .experience-detail {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.88);
-  margin-bottom: 2px;
-}
-
-/* Organization name */
-.sidebar-wrapper .experience-organization {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.82);
-}
-
-/* Divider between Current and Previous */
-.sidebar-wrapper .experience-previous {
-  border-top: 1px solid rgba(255, 255, 255, 0.22);
-  padding-top: 20px;
-  margin-top: 24px;
-}
-
-/* Mobile adjustments */
-@media (max-width: 767px) {
-  .sidebar-wrapper .professional-experience-container {
-    padding: 20px 18px 26px;
-  }
-}
-
-/* ==========================================
-   REFINED EXPERIENCE SIDEBAR DESIGN
-   ========================================== */
-
-/* Compact section heading */
-.sidebar-wrapper
-.professional-experience-container
-.container-block-title {
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 1.3;
-  margin-bottom: 18px;
-}
-
-/* Subtle CURRENT / PREVIOUS labels */
-.sidebar-wrapper .experience-group-title {
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 1.2px;
-  color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 14px;
-}
-
-/* Less heavy job titles */
-.sidebar-wrapper .experience-title {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.45;
-  margin-bottom: 2px;
-}
-
-/* Tighter supporting text */
-.sidebar-wrapper .experience-specialty,
-.sidebar-wrapper .experience-detail,
-.sidebar-wrapper .experience-organization {
-  font-size: 13px;
-  line-height: 1.45;
-  margin-bottom: 1px;
-}
-
-/* Clear separation between jobs */
-.sidebar-wrapper .experience-item {
-  margin-bottom: 20px;
-}
-
-/* Subtle divider between groups */
-.sidebar-wrapper .experience-previous {
-  margin-top: 22px;
-  padding-top: 18px;
-  border-top: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-/* ==========================================
-   EDUCATION & EXPERIENCE TYPOGRAPHY REFINEMENT
-   ========================================== */
-
-/* CURRENT and PREVIOUS: larger and clearer */
-.sidebar-wrapper .experience-group-title {
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  line-height: 1.4;
-  color: #ffffff;
-  margin-bottom: 14px;
-}
-
-/* PhD and BA: smaller, less heavy */
-.sidebar-wrapper .education-container .degree {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.4;
-  letter-spacing: 0;
-  margin: 0 0 3px;
-}
-
-/* University names: same size, regular weight */
-.sidebar-wrapper .education-container .education-university {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.45;
-  color: #ffffff;
-  margin-bottom: 2px;
-}
-
-/* Degree details: slightly softer */
-.sidebar-wrapper .education-container .education-field,
-.sidebar-wrapper .education-container .education-minor {
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.45;
-  color: rgba(255, 255, 255, 0.85);
-  margin-bottom: 2px;
-}
-
-/* More deliberate spacing between degrees */
-.sidebar-wrapper .education-container .item {
-  margin-bottom: 22px;
-}
-
-.sidebar-wrapper .education-container .item:last-child {
-  margin-bottom: 0;
-}
-
-/* Keep degree sizes consistent on mobile */
-@media (max-width: 767px) {
-  .sidebar-wrapper .education-container .degree {
-    font-size: 14px;
-  }
-}
-
-/* ==========================================
-   FINAL SIDEBAR DESIGN
-   Education + Professional Experience
-   ========================================== */
 
 /* ----- SHARED SECTION HEADINGS ----- */
 
@@ -1098,7 +531,9 @@ p {
   margin: 0 0 22px;
 }
 
-/* ----- EDUCATION ----- */
+/* ==========================================
+   EDUCATION
+   ========================================== */
 
 .sidebar-wrapper .education-container .education-heading {
   display: flex;
@@ -1106,43 +541,35 @@ p {
   flex-wrap: wrap;
   column-gap: 9px;
   row-gap: 2px;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
-/* PhD / BA */
-.sidebar-wrapper .education-container .education-heading .degree {
+.sidebar-wrapper .education-container .education-heading .degree,
+.sidebar-wrapper .education-container .education-heading .education-university {
   display: inline;
-  font-size: 14px !important;
-  font-weight: 600 !important;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 1.4;
   letter-spacing: 0;
   color: #ffffff;
   margin: 0;
   padding: 0;
+}
+
+.sidebar-wrapper .education-container .education-heading .degree {
   white-space: nowrap;
 }
 
-/* Cornell / Bryn Mawr */
-.sidebar-wrapper .education-container .education-heading .education-university {
-  display: inline;
-  font-size: 14px !important;
-  font-weight: 600 !important;
-  line-height: 1.4;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-}
+/* Indentation without vertical lines */
 
-/* Vertical line and indent for education details */
 .sidebar-wrapper .education-container .education-details {
-  border-left: 1px solid rgba(255, 255, 255, 0.45);
-  margin-left: 12px;
+  border: none;
+  margin-left: 0;
   padding-left: 12px;
 }
 
-/* Field and minor */
-.sidebar-wrapper .education-container .education-details .education-field,
-.sidebar-wrapper .education-container .education-details .education-minor {
+.sidebar-wrapper .education-container .education-field,
+.sidebar-wrapper .education-container .education-minor {
   font-size: 13px;
   font-weight: 400;
   font-style: normal;
@@ -1152,18 +579,24 @@ p {
   padding: 0;
 }
 
-/* Spacing between education entries */
 .sidebar-wrapper .education-container .item {
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 
 .sidebar-wrapper .education-container .item:last-child {
   margin-bottom: 0;
 }
 
-/* ----- PROFESSIONAL EXPERIENCE ----- */
+/* ==========================================
+   PROFESSIONAL EXPERIENCE
+   ========================================== */
 
-/* CURRENT / PREVIOUS */
+.sidebar-wrapper .professional-experience-container {
+  padding: 20px 16px 26px;
+}
+
+/* CURRENT and PREVIOUS */
+
 .sidebar-wrapper .professional-experience-container .experience-group-title {
   font-size: 14px;
   font-weight: 600;
@@ -1174,36 +607,35 @@ p {
   margin: 0 0 22px;
 }
 
-/* All job titles: same size and weight */
-.sidebar-wrapper .professional-experience-container
-.experience-item .experience-title {
+/* All job titles */
+
+.sidebar-wrapper .professional-experience-container .experience-title {
   font-family: inherit;
-  font-size: 14px !important;
-  font-weight: 600 !important;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 1.4;
   letter-spacing: 0;
   color: #ffffff;
-  margin: 0 0 8px;
+  margin: 0 0 5px;
   padding: 0;
 }
 
-/* Vertical line and indent for experience details */
+/* Indentation without vertical lines */
+
 .sidebar-wrapper .professional-experience-container .experience-details {
-  border-left: 1px solid rgba(255, 255, 255, 0.45);
-  margin-left: 12px;
+  border: none;
+  margin-left: 0;
   padding-left: 12px;
 }
 
-/* All supporting text: same size and weight */
-.sidebar-wrapper .professional-experience-container
-.experience-details .experience-specialty,
-.sidebar-wrapper .professional-experience-container
-.experience-details .experience-detail,
-.sidebar-wrapper .professional-experience-container
-.experience-details .experience-organization {
+/* Supporting details */
+
+.sidebar-wrapper .professional-experience-container .experience-specialty,
+.sidebar-wrapper .professional-experience-container .experience-detail,
+.sidebar-wrapper .professional-experience-container .experience-organization {
   font-family: inherit;
-  font-size: 13px !important;
-  font-weight: 400 !important;
+  font-size: 13px;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0;
   color: rgba(255, 255, 255, 0.9);
@@ -1211,72 +643,39 @@ p {
   padding: 0;
 }
 
-/* Space between jobs */
+/* Spacing between jobs */
+
 .sidebar-wrapper .professional-experience-container .experience-item {
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
-.sidebar-wrapper .professional-experience-container
-.experience-item:last-child {
+.sidebar-wrapper .professional-experience-container .experience-item:last-child {
   margin-bottom: 0;
 }
 
-/* Divider between CURRENT and PREVIOUS */
+/* Horizontal divider between CURRENT and PREVIOUS */
+
 .sidebar-wrapper .professional-experience-container .experience-previous {
   border-top: 1px solid rgba(255, 255, 255, 0.22);
   margin-top: 28px;
   padding-top: 22px;
 }
 
-/* Mobile adjustments */
-@media (max-width: 767px) {
-  .sidebar-wrapper .education-container .education-heading .degree,
-  .sidebar-wrapper .education-container .education-heading .education-university,
-  .sidebar-wrapper .professional-experience-container
-  .experience-item .experience-title {
-    font-size: 14px !important;
-  }
-}
 /* ==========================================
-   SIDEBAR - CLEAN INDENTATION, NO VERTICAL LINES
+   MOBILE ADJUSTMENTS
    ========================================== */
 
-/* Education details */
-.sidebar-wrapper .education-container .education-details {
-  border-left: none;
-  margin-left: 0;
-  padding-left: 12px;
-}
+@media (max-width: 767px) {
+  .sidebar-wrapper .name {
+    font-size: 20px;
+    white-space: normal;
+  }
 
-/* Experience details */
-.sidebar-wrapper .professional-experience-container .experience-details {
-  border-left: none;
-  margin-left: 0;
-  padding-left: 12px;
-}
+  .sidebar-wrapper .container-block {
+    padding: 20px 18px;
+  }
 
-/* Maintain compact spacing within each entry */
-.sidebar-wrapper .education-container .education-heading {
-  margin-bottom: 5px;
-}
-
-.sidebar-wrapper .professional-experience-container
-.experience-item .experience-title {
-  margin-bottom: 5px;
-}
-
-/* Comfortable spacing between entries */
-.sidebar-wrapper .education-container .item {
-  margin-bottom: 24px;
-}
-
-.sidebar-wrapper .professional-experience-container .experience-item {
-  margin-bottom: 25px;
-}
-
-/* No extra space after the last entry */
-.sidebar-wrapper .education-container .item:last-child,
-.sidebar-wrapper .professional-experience-container
-.experience-item:last-child {
-  margin-bottom: 0;
+  .sidebar-wrapper .professional-experience-container {
+    padding: 20px 18px 26px;
+  }
 }
