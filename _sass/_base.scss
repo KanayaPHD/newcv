@@ -744,3 +744,61 @@ p {
   padding-top: 18px;
   border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
+
+/* ==========================================
+   EDUCATION & EXPERIENCE TYPOGRAPHY REFINEMENT
+   ========================================== */
+
+/* CURRENT and PREVIOUS: larger and clearer */
+.sidebar-wrapper .experience-group-title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+/* PhD and BA: smaller, less heavy */
+.sidebar-wrapper .education-container .degree {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin: 0 0 3px;
+}
+
+/* University names: same size, regular weight */
+.sidebar-wrapper .education-container .education-university {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+/* Degree details: slightly softer */
+.sidebar-wrapper .education-container .education-field,
+.sidebar-wrapper .education-container .education-minor {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2px;
+}
+
+/* More deliberate spacing between degrees */
+.sidebar-wrapper .education-container .item {
+  margin-bottom: 22px;
+}
+
+.sidebar-wrapper .education-container .item:last-child {
+  margin-bottom: 0;
+}
+
+/* Keep degree sizes consistent on mobile */
+@media (max-width: 767px) {
+  .sidebar-wrapper .education-container .degree {
+    font-size: 14px;
+  }
+}
