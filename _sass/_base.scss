@@ -960,3 +960,46 @@ p {
     font-size: 14px !important;
   }
 }
+/* ==========================================
+   SIDEBAR - CLEAN INDENTATION, NO VERTICAL LINES
+   ========================================== */
+
+/* Education details */
+.sidebar-wrapper .education-container .education-details {
+  border-left: none;
+  margin-left: 0;
+  padding-left: 12px;
+}
+
+/* Experience details */
+.sidebar-wrapper .professional-experience-container .experience-details {
+  border-left: none;
+  margin-left: 0;
+  padding-left: 12px;
+}
+
+/* Maintain compact spacing within each entry */
+.sidebar-wrapper .education-container .education-heading {
+  margin-bottom: 5px;
+}
+
+.sidebar-wrapper .professional-experience-container
+.experience-item .experience-title {
+  margin-bottom: 5px;
+}
+
+/* Comfortable spacing between entries */
+.sidebar-wrapper .education-container .item {
+  margin-bottom: 24px;
+}
+
+.sidebar-wrapper .professional-experience-container .experience-item {
+  margin-bottom: 25px;
+}
+
+/* No extra space after the last entry */
+.sidebar-wrapper .education-container .item:last-child,
+.sidebar-wrapper .professional-experience-container
+.experience-item:last-child {
+  margin-bottom: 0;
+}
