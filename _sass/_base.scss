@@ -692,11 +692,17 @@ p {
 .sidebar-wrapper .professional-experience-container {
   background-color: #3F5C69;
 }
-/* Horizontal divider above LinkedIn */
+/* Make the line above LinkedIn match CURRENT/PREVIOUS */
 .sidebar-wrapper .contact-container {
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: none;
+  position: relative;
 }
-/* Match the CURRENT / PREVIOUS divider */
-.sidebar-wrapper .contact-container {
-  border-top: 1px solid rgba(255, 255, 255, 0.22);
+
+.sidebar-wrapper .contact-container::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.22);
+  margin-bottom: 20px;
+}
 }
