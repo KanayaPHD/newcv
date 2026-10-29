@@ -15,27 +15,21 @@
     {% for item in experience.current %}
     <div class="experience-item">
 
-      <div class="experience-title">
-        {{ item.title }}
-      </div>
+      <div class="experience-title">{{ item.title }}</div>
 
-      {% if item.specialty %}
-      <div class="experience-specialty">
-        {{ item.specialty }}
-      </div>
-      {% endif %}
+      <div class="experience-details">
+        {% if item.specialty %}
+        <div class="experience-specialty">{{ item.specialty }}</div>
+        {% endif %}
 
-      {% if item.detail %}
-      <div class="experience-detail">
-        {{ item.detail }}
-      </div>
-      {% endif %}
+        {% if item.detail %}
+        <div class="experience-detail">{{ item.detail }}</div>
+        {% endif %}
 
-      {% if item.organization %}
-      <div class="experience-organization">
-        {{ item.organization }}
+        {% if item.organization %}
+        <div class="experience-organization">{{ item.organization }}</div>
+        {% endif %}
       </div>
-      {% endif %}
 
     </div>
     {% endfor %}
@@ -51,27 +45,21 @@
     {% for item in experience.previous %}
     <div class="experience-item">
 
-      <div class="experience-title">
-        {{ item.title }}
-      </div>
+      <div class="experience-title">{{ item.title }}</div>
 
-      {% if item.specialty %}
-      <div class="experience-specialty">
-        {{ item.specialty }}
-      </div>
-      {% endif %}
+      <div class="experience-details">
+        {% if item.specialty %}
+        <div class="experience-specialty">{{ item.specialty }}</div>
+        {% endif %}
 
-      {% if item.detail %}
-      <div class="experience-detail">
-        {{ item.detail }}
-      </div>
-      {% endif %}
+        {% if item.detail %}
+        <div class="experience-detail">{{ item.detail }}</div>
+        {% endif %}
 
-      {% if item.organization %}
-      <div class="experience-organization">
-        {{ item.organization }}
+        {% if item.organization %}
+        <div class="experience-organization">{{ item.organization }}</div>
+        {% endif %}
       </div>
-      {% endif %}
 
     </div>
     {% endfor %}

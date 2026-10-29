@@ -802,3 +802,161 @@ p {
     font-size: 14px;
   }
 }
+
+/* ==========================================
+   FINAL SIDEBAR DESIGN
+   Education + Professional Experience
+   ========================================== */
+
+/* ----- SHARED SECTION HEADINGS ----- */
+
+.sidebar-wrapper .education-container .container-block-title,
+.sidebar-wrapper .professional-experience-container .container-block-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 22px;
+}
+
+/* ----- EDUCATION ----- */
+
+.sidebar-wrapper .education-container .education-heading {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  column-gap: 9px;
+  row-gap: 2px;
+  margin-bottom: 8px;
+}
+
+/* PhD / BA */
+.sidebar-wrapper .education-container .education-heading .degree {
+  display: inline;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+/* Cornell / Bryn Mawr */
+.sidebar-wrapper .education-container .education-heading .education-university {
+  display: inline;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.4;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Vertical line and indent for education details */
+.sidebar-wrapper .education-container .education-details {
+  border-left: 1px solid rgba(255, 255, 255, 0.45);
+  margin-left: 12px;
+  padding-left: 12px;
+}
+
+/* Field and minor */
+.sidebar-wrapper .education-container .education-details .education-field,
+.sidebar-wrapper .education-container .education-details .education-minor {
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 3px;
+  padding: 0;
+}
+
+/* Spacing between education entries */
+.sidebar-wrapper .education-container .item {
+  margin-bottom: 26px;
+}
+
+.sidebar-wrapper .education-container .item:last-child {
+  margin-bottom: 0;
+}
+
+/* ----- PROFESSIONAL EXPERIENCE ----- */
+
+/* CURRENT / PREVIOUS */
+.sidebar-wrapper .professional-experience-container .experience-group-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 0 22px;
+}
+
+/* All job titles: same size and weight */
+.sidebar-wrapper .professional-experience-container
+.experience-item .experience-title {
+  font-family: inherit;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin: 0 0 8px;
+  padding: 0;
+}
+
+/* Vertical line and indent for experience details */
+.sidebar-wrapper .professional-experience-container .experience-details {
+  border-left: 1px solid rgba(255, 255, 255, 0.45);
+  margin-left: 12px;
+  padding-left: 12px;
+}
+
+/* All supporting text: same size and weight */
+.sidebar-wrapper .professional-experience-container
+.experience-details .experience-specialty,
+.sidebar-wrapper .professional-experience-container
+.experience-details .experience-detail,
+.sidebar-wrapper .professional-experience-container
+.experience-details .experience-organization {
+  font-family: inherit;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 3px;
+  padding: 0;
+}
+
+/* Space between jobs */
+.sidebar-wrapper .professional-experience-container .experience-item {
+  margin-bottom: 28px;
+}
+
+.sidebar-wrapper .professional-experience-container
+.experience-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Divider between CURRENT and PREVIOUS */
+.sidebar-wrapper .professional-experience-container .experience-previous {
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  margin-top: 28px;
+  padding-top: 22px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .sidebar-wrapper .education-container .education-heading .degree,
+  .sidebar-wrapper .education-container .education-heading .education-university,
+  .sidebar-wrapper .professional-experience-container
+  .experience-item .experience-title {
+    font-size: 14px !important;
+  }
+}
