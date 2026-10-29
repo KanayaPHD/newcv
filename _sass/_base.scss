@@ -706,3 +706,48 @@ p {
   background-color: rgba(255, 255, 255, 0.22);
   margin-bottom: 20px;
 }
+
+/* SIDEBAR COLORS */
+
+/* Ceramic blue: Experience through the bottom */
+.sidebar-wrapper,
+.sidebar-wrapper .professional-experience-container {
+  background-color: #4B6A78;
+}
+
+/* Darker blue: photo, links, and Education */
+.sidebar-wrapper .profile-container,
+.sidebar-wrapper .contact-container,
+.sidebar-wrapper .education-container {
+  background-color: #3F5C69;
+}
+
+
+/* THIN DIVIDER ABOVE LINKEDIN */
+.sidebar-wrapper .contact-container {
+  border-top: none;
+  position: relative;
+}
+
+.sidebar-wrapper .contact-container::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.22);
+  margin-bottom: 20px;
+}
+
+
+/* THIN DIVIDER ABOVE EDUCATION */
+.sidebar-wrapper .education-container {
+  border-top: none;
+  position: relative;
+}
+
+.sidebar-wrapper .education-container::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.22);
+  margin-bottom: 20px;
+}
