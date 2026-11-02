@@ -1,0 +1,40 @@
+
+{% assign media = site.data.data.media %}
+
+{% if media %}
+<section class="section publications-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-tower-broadcast fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ media.title }}
+  </h2>
+
+  {% for item in media.papers %}
+  <div class="item">
+
+    {% if item.link %}
+    <li>
+      <a href="{{ item.link }}">
+        {{ item.title }}
+      </a>
+    </li>
+    {% else %}
+    <li>{{ item.title }}</li>
+    {% endif %}
+
+    <div class="publication-authors">
+      {{ item.authors }}
+    </div>
+
+    <div class="publication-conference">
+      {{ item.conference }}
+    </div>
+
+  </div>
+  {% endfor %}
+
+</section>
+{% endif %}
