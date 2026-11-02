@@ -48,12 +48,10 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
+    I'm an award-winning behavioral researcher and data scientist with over 25 years of experience across academia, industry, and consulting. My work spans behavior, cognition, and motivation across the lifespan, with published research examining how these processes change over time and vary across contexts. I've collaborated with engineers, designers, computer scientists, and other stakeholders to inform software product development and evaluate policies.I also help organizations develop data strategies that strengthen their analyses, decision-making, and workflows.
+    
+    Rather than presenting a chronological list of publications and projects, I've organized my work I've organized my work by research area and analytical method to highlight the breadth of my experience in behavioral research and data science.
+
 education:
   title: Education
   info:
@@ -88,36 +86,19 @@ professional_experience:
       specialty: "Berger Institute for Work, Family and Children"
       organization: "Claremont McKenna College"
 
-    - title: "Assistant Professor"
-      specialty: "Psychological Science"
-      organization: "Claremont McKenna College"
-
-    - title: "Assistant Professor"
-      specialty: "Psychology"
-      organization: "Muhlenberg College"
 
     - title: "Research Associate"
       specialty: "Center for Children and Technology"
       organization: "Education Development Center, Inc."
       
 experiences:
-  title: Experiences
+  title: Research Areas
   info:
-  - role: Lead Developer
-    time: 2015 - Present
-    company: Startup Hubs, San Francisco
+  - role: UX Research & Tech Adoption
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      architecto beatae vitae dicta sunt explicabo.
-        - Bullet point
-        - Bullet point
+      I've worked on understanding how people interact with products and technologies, using both qualitative and quantitative research to inform design.
+        - JRTE
+        - Reading First Eval
   - role: Senior Software Engineer
     time: 2014 - 2015
     company: Google, London
