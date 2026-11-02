@@ -50,7 +50,7 @@ career-profile:
   summary: |
     I'm an award-winning behavioral researcher and data scientist with over 25 years of experience across academia, industry, and consulting. My work spans behavior, cognition, and motivation across the lifespan, with published research examining how these processes change over time and vary across contexts. I've collaborated with engineers, designers, computer scientists, and other stakeholders to inform software product development and evaluate policies.I also help organizations develop data strategies that strengthen their analyses, decision-making, and workflows.
     
-    Rather than presenting a chronological list of publications and projects, I've organized my work I've organized my work by research area and analytical method to highlight the breadth of my experience in behavioral research and data science.
+    Rather than presenting a traditional CV, I've organized my work by research area and analytical method to highlight the breadth of my experience.
 
 education:
   title: Education
@@ -99,29 +99,21 @@ experiences:
       I've worked on understanding how people interact with products and technologies, using both qualitative and quantitative research to inform design.
         - JRTE
         - Reading First Eval
-  - role: Senior Software Engineer
-    time: 2014 - 2015
-    company: Google, London
+  - role: Cognitive Science
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - role: UI Developer
-    time: 2012 - 2014
-    company: Amazon, London
+      blah blah blah
+        - Memory
+        - eye tracking
+  - role: Assessment & Measurement 
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-
+      blah blah blah
+        - JRA
+        - Gohn
+  - role: Policy Research  
+    details: |
+      blah blah blah
+        - American Psychoogist
+        - Homeless
 certifications:
   title: Certifications
   list:
