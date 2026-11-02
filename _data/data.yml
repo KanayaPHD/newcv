@@ -261,3 +261,64 @@ skills:
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+
+
+# ==========================================
+# ANALYTICAL METHODS
+# ==========================================
+
+analytical_methods:
+  title: Analytical Methods
+  info:
+    - role: Quantitative Methods
+      details: |
+        - Statistical analysis
+        - Survey research
+        - Experimental design
+        - Data visualization
+
+    - role: Qualitative Methods
+      details: |
+        - Interviews
+        - Focus groups
+        - Thematic analysis
+        - Usability testing
+
+    - role: Mixed Methods
+      details: |
+        - Mixed-methods research design
+        - Integration of qualitative and quantitative findings
+
+
+# ==========================================
+# AWARDS
+# ==========================================
+
+awards:
+  title: Awards
+  papers:
+    - title: "Name of Award"
+      authors: "Awarding Organization"
+      conference: "2025"
+
+    - title: "Name of Fellowship"
+      authors: "Awarding Institution"
+      conference: "2024"
+
+
+# ==========================================
+# MEDIA
+# ==========================================
+
+media:
+  title: Media
+  papers:
+    - title: "Title of News Article"
+      link: "https://example.com"
+      authors: "News Organization"
+      conference: "2025"
+
+    - title: "Title of Interview"
+      link: "https://example.com"
+      authors: "Media Outlet"
+      conference: "2024"

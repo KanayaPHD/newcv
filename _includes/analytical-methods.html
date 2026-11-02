@@ -1,0 +1,36 @@
+
+{% assign methods = site.data.data.analytical_methods %}
+{% if methods %}
+<section class="section experiences-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-chart-line fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ methods.title }}
+  </h2>
+
+  {% for method in methods.info %}
+  <div class="item">
+
+    <div class="meta">
+      <div class="upper-row">
+        <h3 class="job-title">{{ method.role }}</h3>
+        <div class="time">{{ method.time }}</div>
+      </div>
+
+      <div class="company">{{ method.company }}</div>
+    </div>
+
+    {% if method.details %}
+    <div class="details">
+      {{ method.details | markdownify }}
+    </div>
+    {% endif %}
+
+  </div>
+  {% endfor %}
+
+</section>
+{% endif %}
