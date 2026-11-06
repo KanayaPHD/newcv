@@ -49,8 +49,8 @@ career-profile:
   title: Career Profile
   summary: |
     I'm an award-winning behavioral researcher and data scientist with over 25 years of experience 
-    across academia, industry, and consulting. My work examines behavior, cognitive processes, and motivation 
-    across the lifespan, with my published research have focused on how these processes change over time 
+    across academia, industry, and consulting. I examine behavior, cognitive processes, and motivation 
+    across the lifespan, and my published research have focused on how these processes change over time 
     and vary across contexts. I've collaborated with engineers, designers, computer scientists, 
     and other stakeholders to inform software product development and evaluate policies. I also 
     help organizations develop data strategies that strengthen their analyses, decision-making, 
@@ -124,10 +124,10 @@ experiences:
 
     - role: Measurement & Assessment
       details: |
-        Examine how we measure human abilities, behaviors, and outcomes—
-        and what happens when those measurements inform important
-        decisions. Develop and evaluate assessment approaches with
-        particular attention to validity, reliability, and fairness.
+       Develop measures of cognitive processes and motivation, emphasizing validity, 
+       reliability, and fairness. Identify scalable assessment practices that accurately 
+       measure human abilities and behaviors.
+        
       papers:
         - citation: >-
             Scullin, M. H., Kanaya, T., & Ceci, S. J. (2002).
