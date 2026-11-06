@@ -91,58 +91,133 @@ professional_experience:
       specialty: "Center for Children and Technology"
       organization: "Education Development Center, Inc."
       
-experiences:
-  title: Research Areas
-  info:
-  - role: UX Research & Tech Adoption
-    details: |
-      I've worked on understanding how people interact with products and technologies, using both qualitative and quantitative research to inform design.
-        - JRTE
-        - Reading First Eval
-  - role: Cognitive Science
-    details: |
-      blah blah blah
-        - Memory
-        - eye tracking
-  - role: Assessment & Measurement 
-    details: |
-      blah blah blah
-        - JRA
-        - Gohn
-  - role: Policy Research  
-    details: |
-      blah blah blah
-        - American Psychoogist
-        - Homeless
 
+# ==========================================
+# RESEARCH APPLICATIONS
+# ==========================================
+
+experiences:
+  title: Research Applications
+  info:
+    - role: UX & Technology Adoption
+      details: |
+        Investigate how people engage with technology and what drives
+        successful adoption. Study the intersection of user behavior,
+        digital tools, and organizational contexts to understand what
+        makes technology effective in practice.
+      papers:
+        - citation: >-
+            Kanaya, T., Light, D., & Culp, K. M. (2005).
+            Factors influencing outcomes from a technology-focused
+            professional development program.
+            *Journal of Research on Technology in Education, 37*, 313–329.
+        - citation: >-
+            Martin, W., Heinze, C., Kanaya, T., Perez, H., & Hupert, N.
+            (2005). Trends in use of handheld technology to support
+            student reading assessment. Paper presented at the annual
+            meeting of the Society for Informational Technology and
+            Teacher Education, Phoenix, AZ.
+
+    - role: Measurement & Assessment
+      details: |
+        Examine how we measure human abilities, behaviors, and outcomes—
+        and what happens when those measurements inform important
+        decisions. Develop and evaluate assessment approaches with
+        particular attention to validity, reliability, and fairness.
+      papers:
+        - citation: >-
+            Scullin, M. H., Kanaya, T., & Ceci, S. J. (2002).
+            Measurement of individual differences in children's
+            suggestibility across situations.
+            *Journal of Experimental Psychology: Applied, 8*, 233–246.
+        - citation: >-
+            Kanaya, T., & Ceci, S. J. (2007).
+            Are all IQ scores created equal? The differential costs
+            of IQ cut-off scores for at-risk children.
+            *Child Development Perspectives, 1*, 52–56.
+
+    - role: Program & Policy Evaluation
+      details: |
+        Assess whether programs and policies achieve their intended
+        goals, for whom, and under what conditions. Combine quantitative
+        evidence with contextual understanding to examine outcomes,
+        estimate impact, and inform decisions about resources and strategy.
+      papers:
+        - citation: >-
+            Kanaya, T., & \*Osthoff-Magalhaes, I. (2013).
+            *A two-level approach to determine Imagine LA's return
+            on investment: Final Report.*
+            Berger Institute for Work, Family and Children.
+        - citation: >-
+            Kanaya, T., & \*Carter, J. (2021).
+            *The economic outcomes of children who received
+            special education services: Final Report.*
+            Lowe Institute for Political Economy.
 
 
 # ==========================================
-# ANALYTICAL METHODS
+# RESEARCH METHODS
 # ==========================================
 
 analytical_methods:
-  title: Analytical Methods
+  title: Research Methods
   info:
-    - role: Quantitative Methods
+    - role: AI, Machine Learning & NLP
       details: |
-        - Statistical analysis
-        - Survey research
-        - Experimental design
-        - Data visualization
+        Explore how computational methods can reveal patterns in
+        language, cognition, and behavior. Apply natural language
+        processing and machine learning to analyze complex data and
+        investigate opportunities for AI-supported research and assessment.
+      papers:
+        - citation: >-
+            Kanaya, T., & Kussmaul, C. (2025).
+            Insights from natural language processing of short-response
+            questions in a learning activity. Paper presented at the
+            international meeting of Technology 4 Education, Chennai, India.
+        - citation: >-
+            Kanaya, T., & Magine, A. (2024).
+            How can the current state of AI guide future conversations
+            of general intelligence?
+            *Journal of Intelligence, 12*(3), 36–44.
+            DOI: https://doi.org/10.3390/jintelligence12030036
 
-    - role: Qualitative Methods
+    - role: Statistical & Longitudinal Modeling
       details: |
-        - Interviews
-        - Focus groups
-        - Thematic analysis
-        - Usability testing
+        Use advanced statistical techniques to uncover relationships,
+        examine change over time, and make sense of complex behavioral
+        data. Expertise includes structural equation modeling, growth
+        curve analysis, and propensity score methods.
+      papers:
+        - citation: >-
+            Kanaya, T., Ceci, S. J., & Scullin, M. H. (2005).
+            Age differences in secular IQ trends: An individual
+            growth modeling approach.
+            *Intelligence, 33*, 613–621.
+        - citation: >-
+            Kanaya, T., Wai, J., & Miranda, B. (2019).
+            Exploring the links between receiving special education
+            services and adulthood outcomes.
+            *Frontiers in Education, 4*, 1–13.
+            DOI: 10.3389/feduc.2019.00056
 
-    - role: Mixed Methods
+    - role: Experimentation & Research Design
       details: |
-        - Mixed-methods research design
-        - Integration of qualitative and quantitative findings
-
+        Design rigorous studies that uncover how people think, learn,
+        and make decisions. Combine experimental and survey methods
+        to test hypotheses, identify meaningful patterns, and
+        translate findings into evidence-based recommendations.
+      papers:
+        - citation: >-
+            Principe, G. F., Kanaya, T., Ceci, S. J., &
+            \*Singh, M. (2006). Believing is seeing: How rumors
+            can engender false memories in preschoolers.
+            *Psychological Science, 17*, 243–248.
+        - citation: >-
+            \*Deer, L. K., \*Gohn, K. M., & Kanaya, T. (2018).
+            Anxiety and self-efficacy as sequential predictors of
+            US college students' career preparation.
+            *Education + Training, 60*, 185–197.
+            DOI: 10.1108/ET-07-2017-0096
 
 # ==========================================
 # AWARDS

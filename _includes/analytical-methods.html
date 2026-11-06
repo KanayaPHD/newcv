@@ -16,11 +16,10 @@
 
     <div class="meta">
       <div class="upper-row">
-        <h3 class="job-title">{{ method.role }}</h3>
-        <div class="time">{{ method.time }}</div>
+        <h3 class="job-title">
+          {{ method.role }}
+        </h3>
       </div>
-
-      <div class="company">{{ method.company }}</div>
     </div>
 
     {% if method.details %}
@@ -29,8 +28,35 @@
     </div>
     {% endif %}
 
+    {% if method.papers %}
+    <div class="selected-work"
+         style="margin-left: 24px; margin-top: 12px;">
+
+      <div style="font-weight: 600; margin-bottom: 8px;">
+        Selected Work
+      </div>
+
+      {% for paper in method.papers %}
+      <div class="reference"
+           style="padding-left: 16px;
+                  text-indent: -16px;
+                  margin-bottom: 12px;">
+        {{ paper.citation | markdownify }}
+      </div>
+      {% endfor %}
+
+    </div>
+    {% endif %}
+
   </div>
   {% endfor %}
+
+  <p class="student-author-note"
+     style="font-size: 0.85em;
+            color: #777;
+            margin-top: 20px;">
+    &#42; Denotes undergraduate co-author.
+  </p>
 
 </section>
 {% endif %}

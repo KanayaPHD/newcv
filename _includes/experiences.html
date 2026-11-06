@@ -16,16 +16,35 @@
 
     <div class="meta">
       <div class="upper-row">
-        <h3 class="job-title">{{ experience.role }}</h3>
-        <div class="time">{{ experience.time }}</div>
+        <h3 class="job-title">
+          {{ experience.role }}
+        </h3>
       </div>
-
-      <div class="company">{{ experience.company }}</div>
     </div>
 
     {% if experience.details %}
     <div class="details">
       {{ experience.details | markdownify }}
+    </div>
+    {% endif %}
+
+    {% if experience.papers %}
+    <div class="selected-work"
+         style="margin-left: 24px; margin-top: 12px;">
+
+      <div style="font-weight: 600; margin-bottom: 8px;">
+        Selected Work
+      </div>
+
+      {% for paper in experience.papers %}
+      <div class="reference"
+           style="padding-left: 16px;
+                  text-indent: -16px;
+                  margin-bottom: 12px;">
+        {{ paper.citation | markdownify }}
+      </div>
+      {% endfor %}
+
     </div>
     {% endif %}
 
