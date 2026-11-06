@@ -48,9 +48,16 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    I'm an award-winning behavioral researcher and data scientist with over 25 years of experience across academia, industry, and consulting. My work spans behavior, cognition, and motivation across the lifespan, with published research examining how these processes change over time and vary across contexts. I've collaborated with engineers, designers, computer scientists, and other stakeholders to inform software product development and evaluate policies.I also help organizations develop data strategies that strengthen their analyses, decision-making, and workflows.
+    I'm an award-winning behavioral researcher and data scientist with over 25 years of experience 
+    across academia, industry, and consulting. My work spans behavior, cognition, and motivation 
+    across the lifespan, with published research examining how these processes change over time 
+    and vary across contexts. I've collaborated with engineers, designers, computer scientists, 
+    and other stakeholders to inform software product development and evaluate policies. I also 
+    help organizations develop data strategies that strengthen their analyses, decision-making, 
+    and workflows.
     
-    Rather than presenting a traditional CV, I've organized my work by research area and analytical method to highlight the breadth of my experience.
+    Rather than presenting a traditional CV, I've organized my work by research area and 
+    analytical method to highlight the breadth of my experience.
 
 education:
   title: Education
@@ -92,19 +99,16 @@ professional_experience:
       organization: "Education Development Center, Inc."
       
 
-# ==========================================
-# RESEARCH APPLICATIONS
-# ==========================================
-
 experiences:
   title: Research Applications
   info:
     - role: UX & Technology Adoption
       details: |
-        Investigate how people engage with technology and what drives
-        successful adoption. Study the intersection of user behavior,
-        digital tools, and organizational contexts to understand what
-        makes technology effective in practice.
+        Examine how program design and user experience influence
+        technology adoption. Compare training formats to identify
+        approaches associated with greater adoption, investigate
+        barriers teachers face when using digital assessment tools,
+        and develop evidence-based recommendations for improvement.
       papers:
         - citation: >-
             Kanaya, T., Light, D., & Culp, K. M. (2005).
@@ -138,10 +142,11 @@ experiences:
 
     - role: Program & Policy Evaluation
       details: |
-        Assess whether programs and policies achieve their intended
-        goals, for whom, and under what conditions. Combine quantitative
-        evidence with contextual understanding to examine outcomes,
-        estimate impact, and inform decisions about resources and strategy.
+        Evaluate the effectiveness and return on investment of
+        programs, identifying opportunities for improvement.
+        Analyze publicly available datasets to investigate
+        policy-related questions, examine outcomes, and inform
+        evidence-based recommendations.
       papers:
         - citation: >-
             Kanaya, T., & \*Osthoff-Magalhaes, I. (2013).
@@ -153,11 +158,6 @@ experiences:
             *The economic outcomes of children who received
             special education services: Final Report.*
             Lowe Institute for Political Economy.
-
-
-# ==========================================
-# RESEARCH METHODS
-# ==========================================
 
 analytical_methods:
   title: Research Methods
