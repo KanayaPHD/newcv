@@ -220,20 +220,30 @@ analytical_methods:
             *Education + Training, 60*, 185–197.
             DOI: 10.1108/ET-07-2017-0096
 
+
 # ==========================================
 # AWARDS
 # ==========================================
 
 awards:
-  title: Awards
-  papers:
-    - title: "Name of Award"
-      authors: "Awarding Organization"
-      conference: "2025"
+  title: "Awards & Honors"
+  intro: |
+    My research has been recognized through awards, fellowships,
+    and grants from organizations in measurement and the social sciences. 
+    Selected honors include:
 
-    - title: "Name of Fellowship"
-      authors: "Awarding Institution"
-      conference: "2024"
+  papers:
+    - title: "American Educational Research Association Division G Early Career Scholar Award"
+
+    - title: "American Psychological Association Division 33 Outstanding Student Research Award"
+
+    - title: "Howard Hughes Medical Institute Fellowship"
+
+    - title: "John Randolph and Dora Haynes Foundation Faculty Fellowship"
+
+    - title: "Spencer Foundation Research Grant"
+
+    - title: "Women in Measurement Research Fellow"
 
 
 # ==========================================
@@ -241,14 +251,23 @@ awards:
 # ==========================================
 
 media:
-  title: Media
-  papers:
-    - title: "Title of News Article"
-      link: "https://example.com"
-      authors: "News Organization"
-      conference: "2025"
+  title: "Selected Media Coverage"
+  intro: |
+    My research has received national and international media
+    coverage, highlighting findings, including:
 
-    - title: "Title of Interview"
-      link: "https://example.com"
-      authors: "Media Outlet"
-      conference: "2024"
+  papers:
+    - title: "The New Yorker"
+      link: "https://www.newyorker.com/magazine/2007/12/17/none-of-the-above"
+
+    - title: "American Psychological Association"
+      link: "https://www.apa.org/news/press/releases/2003/10/flynn-effect"
+
+    - title: "Australian Broadcasting Corporation"
+      link: "https://www.abc.net.au/science/archive/articles/2003/10/20/970647.htm"
+
+    - title: "Chalkbeat"
+      link: "https://www.chalkbeat.org/2019/11/5/21109173/hit-hardest-by-texas-illegal-special-education-cap-low-income-students-of-color-study-shows/"
+
+    - title: "Newswise"
+      link: "https://www.newswise.com/articles/test-identifies-children-who-are-unreliable-witnesses"

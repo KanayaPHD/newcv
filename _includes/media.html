@@ -12,29 +12,27 @@
     {{ media.title }}
   </h2>
 
-  {% for item in media.papers %}
-  <div class="item">
+  {% if media.intro %}
+  <div class="intro">
+    {{ media.intro | markdownify }}
+  </div>
+  {% endif %}
 
-    {% if item.link %}
+  <ul class="media-list">
+    {% for item in media.papers %}
     <li>
-      <a href="{{ item.link }}">
+      {% if item.link %}
+      <a href="{{ item.link }}"
+         target="_blank"
+         rel="noopener noreferrer">
         {{ item.title }}
       </a>
+      {% else %}
+        {{ item.title }}
+      {% endif %}
     </li>
-    {% else %}
-    <li>{{ item.title }}</li>
-    {% endif %}
-
-    <div class="publication-authors">
-      {{ item.authors }}
-    </div>
-
-    <div class="publication-conference">
-      {{ item.conference }}
-    </div>
-
-  </div>
-  {% endfor %}
+    {% endfor %}
+  </ul>
 
 </section>
 {% endif %}
