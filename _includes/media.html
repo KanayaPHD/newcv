@@ -23,9 +23,12 @@
     <li>
       {% if item.link %}
       <a href="{{ item.link }}"
+         class="media-link"
          target="_blank"
          rel="noopener noreferrer">
         {{ item.title }}
+        <i class="fas fa-external-link-alt"
+           aria-hidden="true"></i>
       </a>
       {% else %}
         {{ item.title }}
