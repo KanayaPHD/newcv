@@ -80,7 +80,8 @@ professional_experience:
       organization: "Claremont McKenna College"
 
     - title: "Independent Consultant"
-      specialty: "Behavioral & UX Research"
+      specialty: "UX Research"
+      specialty: "Customer Analytics"
       detail: "Policy Evaluation"
       organization: "Data Science"
 
@@ -149,15 +150,14 @@ experiences:
         evidence-based recommendations.
       papers:
         - citation: >-
+           Kanaya, T., Scullin, M.H. & Ceci, S.J. (2003). The Flynn effect and 
+           U.S. policies: The impact of rising IQ scores on American society 
+           via Mental Retardation diagnoses. *American Psychologist, 58,* 1-13
+        - citation: >-
             Kanaya, T., & \*Osthoff-Magalhaes, I. (2013).
             *A two-level approach to determine Imagine LA's return
             on investment: Final Report.*
             Berger Institute for Work, Family and Children.
-        - citation: >-
-            Kanaya, T., & \*Carter, J. (2021).
-            *The economic outcomes of children who received
-            special education services: Final Report.*
-            Lowe Institute for Political Economy.
 
 analytical_methods:
   title: Research Methods
