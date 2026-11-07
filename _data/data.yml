@@ -80,10 +80,11 @@ professional_experience:
       organization: "Claremont McKenna College"
 
     - title: "Independent Consultant"
-      specialty: "UX Research"
-      specialty: "Customer Analytics"
-      detail: "Policy Evaluation"
-      organization: "Data Science"
+      specialties:
+       - "UX Research"
+       - "Customer Analytics"
+       - "Policy Evaluation"
+       - "Data Science"
 
   previous:
     - title: "AI Decision & Data Scientist"
