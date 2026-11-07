@@ -18,22 +18,3 @@ $sidebar-order: 2;
 @import "default"; // main partials
 
 
-/* Media coverage links */
-
-.media-list .media-link {
-  color: darken($theme-color, 15%);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-thickness: 1px;
-  font-weight: 500;
-}
-
-.media-list .media-link:hover {
-  color: darken($theme-color, 30%);
-  text-decoration-thickness: 2px;
-}
-
-.media-list .media-link i {
-  font-size: 0.75em;
-  margin-left: 5px;
-}
